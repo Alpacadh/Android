@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:backgroundTint="@color/colorPrimaryDark"
+    tools:context=".Second">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/statet"/>
+    <Button
+        android:id="@+id/button123"
+        android:layout_width="41dp"
+        android:layout_height="46dp"
+        android:layout_above="@+id/editText4"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="166dp"
+        android:background="#00000000"
+        android:drawableStart="@drawable/ic_back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.008"
+        tools:ignore="MissingConstraints,NotSibling" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="599dp"
+        android:layout_marginTop="108dp"
+        android:background="@mipmap/bg_regist"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.566"
+        tools:ignore="MissingConstraints,NotSibling">
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="148dp"
+            android:drawableStart="@mipmap/ic_register_nickname"
+            android:hint="@string/请输入昵称" />
+
+        <EditText
+            android:id="@+id/editText4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/editText2"
+            android:layout_marginTop="7dp"
+            android:drawableStart="@mipmap/ic_register_phone"
+            android:hint="@string/请输入手机号" />
+
+        <EditText
+            android:id="@+id/editText5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/editText4"
+            android:drawableStart="@mipmap/ic_register_pwd"
+            android:hint="@string/请输入密码2" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText5"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="93dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="@string/zhuce"
+            android:textColor="@color/colorWhite" />
+
+
+        <EditText
+            android:id="@+id/editText6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/editText5"
+            android:drawableStart="@mipmap/ic_register_gender"
+            android:inputType=""
+            tools:ignore="LabelFor" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="315dp"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@+id/editText6"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="7dp"
+            android:entries="@array/gender" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="47dp"
+        android:layout_height="31dp"
+        android:layout_above="@+id/editText4"
+        android:layout_alignStart="@+id/spinner"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/zhu"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.197"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.015"
+        tools:ignore="MissingConstraints,NotSibling" />
+
+
+</android.support.constraint.ConstraintLayout>
